@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Trispace:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <form method="post" action=''>
+        <label for="deposit">
+            <input type="text" name="deposit" placeholder="enter name here"
+                id=entry>
+        </label>
+        <input type="submit" style="display:none;" />
+
+    </form>
+
+    <!--auto select entry form-->
+    <script>
+        var input = document.getElementById('entry');
+        input.focus();
+        input.select();
+    </script>
+
+
+    <h1 id="color">{{data}}</h1>
+    <div></div>
+
+    <a id="link" href="">
+        <p id="circle" class="planet"></p>
+    </a>
+    <script>
+        document.getElementById("link").href = "/save/" + document.getElementById("color").innerHTML;
+    </script>
+    <script src="generator.js"></script>
+    <script type="text/javascript">
+        generator();
+    </script>
+</body>
+
+
+</html>
