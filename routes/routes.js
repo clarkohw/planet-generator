@@ -6,7 +6,7 @@ const mysql = require('mysql')
 // set up our database
 const pool = mysql.createPool({
     host: 'localhost',
-    //edit username/password
+    //----------edit username/password-------
     user: 'root',
     password: '',
     database: 'planets',
